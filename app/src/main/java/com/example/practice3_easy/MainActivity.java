@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.button.setOnClickListener(view -> {
+        binding.button.setOnClickListener(v -> {
             if (checked) {
                 Toast.makeText(this, "한번만 할 수 있음", Toast.LENGTH_SHORT).show();
                 return;
